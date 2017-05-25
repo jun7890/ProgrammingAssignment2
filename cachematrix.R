@@ -41,15 +41,15 @@ cacheSolve <- function(x, ...) {
 }  
 
 #Test
-> matrix <- matrix(c(2,5,2,3,6,4,0,0,1), nrow=3, ncol=3)
-> matrix2 <- makeCacheMatrix(matrix)
-> cacheSolve(matrix2) 
+matrix <- matrix(c(2,5,2,3,6,4,0,0,1), nrow=3, ncol=3)
+matrix2 <- makeCacheMatrix(matrix)
+cacheSolve(matrix2) 
 ## inverse
           [,1]       [,2] [,3]
 [1,] -2.000000  1.0000000    0
 [2,]  1.666667 -0.6666667    0
 [3,] -2.666667  0.6666667    1
-> cacheSolve(matrix2) 
+cacheSolve(matrix2) 
 ## inverse from cache
 getting cached data             
           [,1]       [,2] [,3]
